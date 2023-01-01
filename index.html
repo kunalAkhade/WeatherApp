@@ -1,0 +1,69 @@
+<html>
+
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+
+        </title>
+        <style>
+           
+
+
+            body{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             background-color: black;
+             font-size: 120%;
+           
+            }
+          div{
+             background-color: black;
+             width: 100%;
+             max-width: 420px;
+             height: 100px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             border-radius: 40px;
+
+           
+           
+             
+          }
+          .textBox{
+            border: none;
+            outline: none;
+            padding: 0.4em 1em;
+            border-radius: 24px;
+            background-color: #7c7c7c2b;
+            color: white;
+            font-family: inherit;
+            font-size: 140%;
+            width: calc(100% - 100px);
+           
+
+          }
+          .button-submit{
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: #7c7c7c2b;
+            background-image: url(https://www.citypng.com/public/uploads/preview/search-explore-white-icon-transparent-png-31634946340qymsafkpk6.png);
+            background-size: cover;
+          }
+         
+        
+        </style>
+    </head>
+    <body>
+        <div >
+        <form method="POST" action="/">
+            <div>
+            <input class="textBox" type="text" name="cityName" placeholder="Enter City Name" autocomplete="off">
+            <button class="button-submit" type="submit" name="submit"></button>
+        </div>
+        </form>
+        </div>
+    </body>
+</html>

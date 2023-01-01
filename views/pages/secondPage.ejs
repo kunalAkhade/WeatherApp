@@ -1,0 +1,83 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+
+  </title>
+  <style>
+         .outer-container{
+            width: 100%;
+            max-width: 420px;
+            border-radius: 40px;
+            opacity: 0.99;
+            background-color: #000000d0;
+            padding: 2em;
+            margin: 2em;
+            color:white;
+         }
+
+          body{
+               text-align: center;
+             background-color: black;
+             margin:0; 
+             display: flex; 
+             justify-content: center; 
+             align-items: center; 
+             background-image: url(<%=Info.image%>); 
+             background-size: cover; 
+             background-repeat: no-repeat;
+            }
+          .container{
+             background-color: black;
+             width: 100%;
+             max-width: 420px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             border-radius: 40px;
+          }
+          .textBox{
+            border: none;
+            outline: none;
+            padding: 0.4em 1em;
+            border-radius: 40px;
+            background-color: #7c7c7c2b;
+            color: white;
+            font-family: inherit;
+            font-size: 140%;
+            width: calc(100% - 100px);
+           
+
+          }
+          .button-submit{
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: #7c7c7c2b;
+            background-image: url(https://www.citypng.com/public/uploads/preview/search-explore-white-icon-transparent-png-31634946340qymsafkpk6.png);
+            background-size: cover;
+          }
+
+         
+        
+  </style>
+</head>
+
+<body>
+<div class="outer-container">
+    <div >
+      <form method="POST" action="/">
+          <div class="container">
+          <input class="textBox" type="text" name="cityName" placeholder="Search" autocomplete="off">
+          <button class="button-submit" type="submit" name="submit"></button>
+      </div>
+      </form>
+      </div>
+   <div style="margin-bottom:2px;"><h2 style="text-align: center;">Weather in <%=Info.cityName%></h2></div>
+    <div><h1> <%=Info.temp%> <sup>o</sup>C</h1>
+    <img src="http://openweathermap.org/img/wn/<%=Info.icon%>@2x.png" alt class="icon"><h1> <%=Info.details%></h2>
+    </div>
+  </div>  
+
+</body>
+</html>
